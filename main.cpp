@@ -3,12 +3,13 @@
 
 using namespace std;
 
-struct Nguoi {
+struct KhachHang {
     string cccd;
     string ten;
     string ngaySinh;
     string sdt;
     string diaChi;
+    int maHangMuc;
 };
 struct VatLieu {
     string tenVatLieu;
@@ -21,7 +22,7 @@ struct DanhSachVatLieu {
 };
 
 struct TuNhan {
-    Nguoi tuNhan;
+    KhachHang tuNhan;
     string congViec;
     string ngayXacNhanKiKet;
     int maHangMuc;
@@ -29,20 +30,21 @@ struct TuNhan {
 struct ToChuc {
     string tenToCHuc;
     string maToCHuc;
-    Nguoi nguoiDaiDien;
+    KhachHang nguoiDaiDien;
     string chungTu;
 };
 struct NhaNuoc {
     //Phap ly ???
+    KhachHang nguoiDuocPhanCong;
 };
 struct HangMuc{
     string tenHangMuc;
-    string maHangMuc;
+    int maHangMuc;
     int maDonVi;
 };
  struct DonViThiCong {
      int maDonVi;
-     Nguoi chuDauTu;
+     string chuDauTu;
      int soLuongNhanCong;
      DanhSachVatLieu ds;
      string thoiGianTrienKhai;
