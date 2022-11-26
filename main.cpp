@@ -26,7 +26,15 @@ struct TuNhan {
     string ngayXacNhanKiKet;
     int maHangMuc;
 };
-
+struct ToChuc {
+    string tenToCHuc;
+    string maToCHuc;
+    Nguoi nguoiDaiDien;
+    string chungTu;
+};
+struct NhaNuoc {
+    //Phap ly ???
+};
 struct HangMuc{
     string tenHangMuc;
     string maHangMuc;
